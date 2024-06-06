@@ -1,0 +1,59 @@
+.store {
+  background-color: rgb(243, 241, 239);
+  padding: 60px 0px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text h2 {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .card {
+      background-color: rgb(243, 241, 239);
+      border: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 80px;
+
+      .card-items {
+        padding: 20px;
+
+        img {
+          width: 200px;
+          height: 250px;
+        }
+
+        .item-details {
+          margin-top: 20px;
+
+          .list-items {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .list-item {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .store .container .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .card-items {
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}
